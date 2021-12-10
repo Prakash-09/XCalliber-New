@@ -1,0 +1,10 @@
+.add-icon{
+    cursor: pointer;
+}
+.spinner-card{
+    box-shadow: 0 2px 10px -1px rgb(69 90 100 / 30%);
+    transition: box-shadow 0.2s ease-in-out;
+}
+.cursor-pointer{
+    cursor: pointer;
+}

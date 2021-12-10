@@ -1,0 +1,123 @@
+.explorews-component{
+    
+    .sideNavbar-container{
+        height: 88vh;
+        overflow: auto;
+        width: 5rem;
+        padding: .5rem;
+        transition: .5s;
+        float: left;
+        position: absolute;
+        background-color: #ffffff;
+        z-index: 99;
+
+        .home-nav-item{
+            max-width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            background-color: #1A73E8;
+            color: #ffffff;
+            border-radius: .3rem;
+            box-shadow: 0 10px 6px -6px #777;
+            cursor: pointer;
+
+            .home-nav-item-icon{
+                padding-left: 0.9rem;
+            }
+            .home-nav-item-label{
+                padding-left: 1.3rem;
+            }
+        }
+        .topic-nav-item{
+            max-width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            cursor: pointer;
+
+            .topic-nav-item-icon{
+                padding-left: 1.3rem;
+            }
+            .topic-nav-item-label{
+                padding-left: 1.5rem;
+            }
+        }
+        .topic-nav-item:hover{
+            color: #1A73E8;
+        }
+    }
+    .sideNavbar-container:hover{
+        width: 15rem;
+    }
+    .content-container{
+        padding-left: 6rem;
+    }
+
+    .blocks-container-header{
+        background-color: rgb(104, 103, 103);
+        width: 13rem;
+        color: #ffffff;
+        margin-left: 2rem;
+        margin-bottom: -1.8rem;
+        z-index: 98;
+
+        .logo-title{
+            margin-top: .15rem;
+            margin-bottom: 0rem;
+        }
+    }
+    .blocks-container{
+        opacity: 1;
+        width: 100%;
+        min-height: calc(100vh - 160px);
+        background-repeat: no-repeat;
+        background-image:   
+            linear-gradient( rgb(104, 103, 103), rgb(104, 103, 103)),
+            linear-gradient( rgb(104, 103, 103), rgb(104, 103, 103)),
+            linear-gradient( rgb(104, 103, 103), rgb(104, 103, 103)),
+            linear-gradient( rgb(104, 103, 103), rgb(104, 103, 103));
+        background-size:    100% 5px, 5px 100%, 100% 5px, 5px 100%;
+        background-position:    0 0, 100% 0, 100% 100%, 0 100%;
+        animation: bg 1s cubic-bezier(0.19, 1, 0.22, 1) 1;
+        /* animation-play-state: running; */
+
+        .topic-container{
+            background-color: rgb(231, 230, 230);
+
+            .data-title{
+                max-width: calc(100% - 50px);
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+        }
+        .add-extra-topic-icon{
+            cursor: pointer;
+            margin-top: 1.69rem;
+        }
+        .trash-add-subtopic-icons{
+            margin-top: -0.2rem;
+        }
+    }
+    @keyframes bg {
+        0% {
+            background-size:    0 5px, 5px 0, 0 5px, 5px 0;
+        }
+        25% {
+            background-size:    100% 5px, 5px 0, 0 5px, 5px 0;
+        }
+        50% {
+            background-size:    100% 5px, 5px 100%, 0 5px, 5px 0;
+        }
+        75% {
+            background-size:    100% 5px, 5px 100%, 100% 5px, 5px 0;
+        }
+        100% {
+            background-size:    100% 5px, 5px 100%, 100% 5px, 5px 100%;
+        }
+    }
+
+    .full-split-container{
+        border: 1px solid grey;
+        color: #1A73E8;
+    }
+}
